@@ -1,6 +1,6 @@
-(defproject org.clojars.seancorfield/clj-soap "0.2.1-SNAPSHOT"
+(defproject org.clojars.j1mr10rd4n/clj-soap "0.2.1-SNAPSHOT"
   :description "SOAP Client and Server using Apache Axis2."
-  :url "https://github.com/seancorfield/clj-soap"
+  :url "https://github.com/j1mr10rd4n/clj-soap"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
