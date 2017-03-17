@@ -77,14 +77,14 @@
   (for [elem (some-> (first (filter #(= "out" (.getDirection %))
                                  (iterator-seq (.getMessages axis-op))))
                   .getSchemaElement .getSchemaType
-                  .getParticle .getItems .getIterator iterator-seq)]
+                  .getParticle .getItems seq)]
     {:name (.getName elem) :type (some-> elem .getSchemaType .getName keyword)}))
 
 (defn axis-op-rettype [axis-op]
   (some-> (first (filter #(= "in" (.getDirection %))
                       (iterator-seq (.getMessages axis-op))))
-       .getSchemaElement .getSchemaType .getParticle .getItems .getIterator
-       iterator-seq first
+       .getSchemaElement .getSchemaType .getParticle .getItems
+       seq first
        .getSchemaType .getName
        keyword))
 
